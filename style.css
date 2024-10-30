@@ -4,7 +4,28 @@ body{
     font-weight: 400;
     overflow-x: hidden;
     max-width: 100%;
+    background-color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 html{
     overflow-x: hidden;
     max-width: 100%;  
@@ -12,13 +33,13 @@ html{
 /* styling menu icon */
 .nav-menu{
     border: none;
-    background-color: #fff;
+    background-color: #0b0b0b;
     font-size: 1.5rem;
     color: #fca61f;
 }
 /* styling navbar links  */
 .navbar-nav a{
-    color: black;
+    color: rgb(241, 235, 235);
     position: relative;
 }
 .navbar-nav a:hover{
@@ -45,12 +66,12 @@ html{
 .c-btn{
     border: none;
     background: #fca61f;
-    color: #fff;
+    color: #f3eded;
     font-size: 1.2rem;
 }
 /* styling home section starts */
 .home{
-    background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);
+    background: linear-gradient(33deg, rgb(18, 18, 18) 0%, rgb(21, 21, 21) 100%);
     padding: 30px 0px 10px 0px;
 }
 .home h2{
@@ -146,61 +167,83 @@ html{
 }
 
 /* skill section starts */
-.skill{
-    background-color: rgb(234, 234, 249);
-}
-.progress-card{
-    padding: 12% 10% 10% 15%;
-    background-color: #fff;
-    text-align: center;
-    border-radius: 10%;
-}
-.progress-card:hover{
-    transform: scale(1.1,1.1);
-    transition-duration: 0.6s;
-}
-.circular-progress{
-    position: relative;
-    height: 130px;
-    width: 130px;
-    border-radius: 50%;
-    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.circular-progress::before{
-    content: "";
-    position: absolute;
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    background-color: #fff;
-}
-.progress-value{
-    position: relative;
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-.html-progress{
-    color: #fca61f;
-}
-.javascript-progress{
-    color: #6f34fe;
-}
-.php-progress{
-    color: #20c997;
-}
-.reactjs-progress{
-    color: #3f396d;
-}
-.text{
-    font-size: 1.2rem;
+/* Section Background */
+.skill {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    padding: 3rem 1rem;
+  }
+  
+  .skill .heading h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: #fff; /* White color for heading */
+  }
+  
+  .skill p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ddd; /* Light text color for better contrast */
+    margin-bottom: 1rem;
+  }
+  
+  /* Progress Bars */
+  .progress-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .progress {
+    background-color: #444; /* Darker background for progress bars */
+    height: 1.25rem;
+    border-radius: 5px;
+  }
+  
+  .progress-bar {
+    background-color: chocolate;
+    color: #fff;
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
+    font-weight: bold;
+  }
+  
+  /* Chocolate Button */
+  .btn.c-btn.h-btn {
+    background-color: chocolate;
+    border: none;
+    font-size: 1rem;
     font-weight: 500;
-}
-.heading p{
-    font-size: 1.3rem;
-}
+    color: #fff; /* White text color */
+    transition: background-color 0.3s;
+  }
+  
+  .btn.c-btn.h-btn:hover {
+    background-color: #8b4513; /* Darker shade of chocolate on hover */
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .skill-with-progress,
+    .skill-detail {
+      text-align: center;
+    }
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
 
 /* portfolio section starts */
 #myBtnContainer{

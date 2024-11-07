@@ -237,7 +237,12 @@ html{
 
 
 
-
+  .portfolio .card-img-top {
+    width: 100%;          /* Full width of the card */
+    height: 250px;        /* Set a fixed height */
+    object-fit: cover;    /* Scale the image to cover the area without distortion */
+  }
+  
 
 
 
